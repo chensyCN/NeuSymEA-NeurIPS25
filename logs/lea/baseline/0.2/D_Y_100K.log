@@ -1,0 +1,106 @@
+
+Exp config:
+ simplify_url: True
+remove_ID_attr: False
+train_ratio: 0.2
+delta_0: 0.5
+delta_1: 0.9
+ea_model: lightea
+print_during_exp: {'paris': False}
+gpu: 4
+
+Construct KGs...
+
+Information of Knowledge Graph (D_Y_100K-KG1):
+- Relation Tuple Number: 576547
+- Attribute Tuple Number: 0
+- Entity Number: 100000
+- Relation Number: 230
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: http://dbpedia.org/ontology/associatedAct	Func: 1.0
+Name: http://dbpedia.org/ontology/routeStart	Func: 1.0
+Name: http://dbpedia.org/ontology/routeStart-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/associatedAct-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/leftTributary	Func: 1.0
+Name: http://dbpedia.org/ontology/leftTributary-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/twinTown-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/formerBandMember-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/officialLanguage	Func: 1.0
+Name: http://dbpedia.org/ontology/spokenIn-(INV)	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: http://dbpedia.org/ontology/associatedAct	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/routeStart	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/routeStart-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/associatedAct-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/twinTown	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/leftTributary	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/formerBandMember	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/leftTributary-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/spokenIn	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/officialLanguage-(INV)	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+
+Information of Knowledge Graph (D_Y_100K-KG2):
+- Relation Tuple Number: 865265
+- Attribute Tuple Number: 0
+- Entity Number: 100000
+- Relation Number: 31
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: isKnownFor	Func: 1.0
+Name: wasBornIn	Func: 1.0
+Name: isKnownFor-(INV)	Func: 1.0
+Name: diedIn	Func: 1.0
+Name: directed-(INV)	Func: 0.9713234166538874
+Name: hasOfficialLanguage	Func: 0.9705882352941176
+Name: hasAcademicAdvisor	Func: 0.9665271966527197
+Name: edited-(INV)	Func: 0.966389591615468
+Name: isInterestedIn	Func: 0.9444444444444444
+Name: isMarriedTo-(INV)	Func: 0.9370352007932573
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: isKnownFor	Func-Inv: 1.0
+Name: wasBornIn-(INV)	Func-Inv: 1.0
+Name: isKnownFor-(INV)	Func-Inv: 1.0
+Name: diedIn-(INV)	Func-Inv: 1.0
+Name: directed	Func-Inv: 0.9713234166538874
+Name: hasOfficialLanguage-(INV)	Func-Inv: 0.9705882352941176
+Name: hasAcademicAdvisor-(INV)	Func-Inv: 0.9665271966527197
+Name: edited	Func-Inv: 0.966389591615468
+Name: isInterestedIn-(INV)	Func-Inv: 0.9444444444444444
+Name: isMarriedTo	Func-Inv: 0.9370352007932573
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+Number of refined train pairs: 20000 from 20000 annotated pairs
+Number of overall refined and inferred train pairs: 20000
+Precision: 1.0000	Recall: 0.2000	F1-Score: 0.3333
+recall of annotated true pairs: 20000/20000
+precision of annotated true pairs: 20000/20000
+Time to normalize features: 0.12 seconds
+new generated pairs = 74462
+rest pairs = 5538
+Time to normalize features: 0.15 seconds
+Hits@1: 0.956 Hits@10: 0.986 MRR: 0.967
+
+Time to normalize features: 0.03 seconds
+new generated pairs = 2252
+rest pairs = 3286
+Time to normalize features: 0.14 seconds
+Hits@1: 0.974 Hits@10: 0.996 MRR: 0.983
+
+Time to normalize features: 0.15 seconds
+Hits@1: 0.978 Hits@10: 0.996 MRR: 0.985
+

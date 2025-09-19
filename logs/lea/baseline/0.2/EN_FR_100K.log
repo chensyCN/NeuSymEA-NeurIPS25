@@ -1,0 +1,106 @@
+
+Exp config:
+ simplify_url: True
+remove_ID_attr: False
+train_ratio: 0.2
+delta_0: 0.5
+delta_1: 0.9
+ea_model: lightea
+print_during_exp: {'paris': False}
+gpu: 4
+
+Construct KGs...
+
+Information of Knowledge Graph (EN_FR_100K-KG1):
+- Relation Tuple Number: 649902
+- Attribute Tuple Number: 0
+- Entity Number: 100000
+- Relation Number: 379
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: http://dbpedia.org/ontology/sourceConfluencePlace	Func: 1.0
+Name: http://dbpedia.org/ontology/sisterCollege	Func: 1.0
+Name: http://dbpedia.org/ontology/highestState	Func: 1.0
+Name: http://dbpedia.org/ontology/sisterCollege-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/highestState-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/mouthRegion	Func: 1.0
+Name: http://dbpedia.org/ontology/lowestMountain	Func: 1.0
+Name: http://dbpedia.org/ontology/highestPlace	Func: 1.0
+Name: http://dbpedia.org/ontology/homeArena	Func: 1.0
+Name: http://dbpedia.org/ontology/secondTeam	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: http://dbpedia.org/ontology/sourceConfluencePlace-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/sisterCollege	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/highestState	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/sisterCollege-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/highestState-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/lowestMountain-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/mouthRegion-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/highestPlace	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/homeArena	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/highestPlace-(INV)	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+
+Information of Knowledge Graph (EN_FR_100K-KG2):
+- Relation Tuple Number: 561391
+- Attribute Tuple Number: 0
+- Entity Number: 100000
+- Relation Number: 287
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: http://dbpedia.org/ontology/patronSaint	Func: 1.0
+Name: http://dbpedia.org/ontology/subregion	Func: 1.0
+Name: http://dbpedia.org/ontology/league	Func: 1.0
+Name: http://dbpedia.org/ontology/sea	Func: 1.0
+Name: http://dbpedia.org/ontology/governmentType	Func: 1.0
+Name: http://dbpedia.org/ontology/magazine	Func: 1.0
+Name: http://dbpedia.org/ontology/father	Func: 1.0
+Name: http://dbpedia.org/ontology/childOrganisation-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/related	Func: 1.0
+Name: http://dbpedia.org/ontology/whaDraftTeam	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: http://dbpedia.org/ontology/whaDraftTeam-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/patronSaint-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/subregion-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/sea-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/governmentType-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/childOrganisation	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/magazine-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/league-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/related-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/anthem-(INV)	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+Number of refined train pairs: 20000 from 20000 annotated pairs
+Number of overall refined and inferred train pairs: 20000
+Precision: 1.0000	Recall: 0.2000	F1-Score: 0.3333
+recall of annotated true pairs: 20000/20000
+precision of annotated true pairs: 20000/20000
+Time to normalize features: 0.14 seconds
+new generated pairs = 50384
+rest pairs = 29616
+Time to normalize features: 0.14 seconds
+Hits@1: 0.751 Hits@10: 0.910 MRR: 0.807
+
+Time to normalize features: 0.06 seconds
+new generated pairs = 13443
+rest pairs = 16173
+Time to normalize features: 0.14 seconds
+Hits@1: 0.821 Hits@10: 0.941 MRR: 0.864
+
+Time to normalize features: 0.14 seconds
+Hits@1: 0.829 Hits@10: 0.942 MRR: 0.870
+

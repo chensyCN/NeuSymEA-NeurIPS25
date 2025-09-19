@@ -1,0 +1,116 @@
+
+Exp config:
+ simplify_url: True
+remove_ID_attr: False
+train_ratio: 0.2
+delta_0: 0.5
+delta_1: 0.9
+ea_model: lightea
+print_during_exp: {'paris': False}
+gpu: 4
+
+Construct KGs...
+
+Information of Knowledge Graph (EN_DE_1M-KG1):
+- Relation Tuple Number: 7922555
+- Attribute Tuple Number: 0
+- Entity Number: 1160306
+- Relation Number: 596
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: r1_556	Func: 1.0
+Name: r1_557	Func: 1.0
+Name: r1_446	Func: 1.0
+Name: r1_556-(INV)	Func: 1.0
+Name: r1_465	Func: 1.0
+Name: r1_342	Func: 1.0
+Name: r1_593	Func: 1.0
+Name: r1_593-(INV)	Func: 1.0
+Name: r1_185	Func: 1.0
+Name: r1_571-(INV)	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: r1_556	Func-Inv: 1.0
+Name: r1_557-(INV)	Func-Inv: 1.0
+Name: r1_446-(INV)	Func-Inv: 1.0
+Name: r1_556-(INV)	Func-Inv: 1.0
+Name: r1_465-(INV)	Func-Inv: 1.0
+Name: r1_593	Func-Inv: 1.0
+Name: r1_342-(INV)	Func-Inv: 1.0
+Name: r1_593-(INV)	Func-Inv: 1.0
+Name: r1_503	Func-Inv: 1.0
+Name: r1_571-(INV)	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+
+Information of Knowledge Graph (EN_DE_1M-KG2):
+- Relation Tuple Number: 3000489
+- Attribute Tuple Number: 0
+- Entity Number: 849646
+- Relation Number: 247
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: r2_218	Func: 1.0
+Name: r2_191	Func: 1.0
+Name: r2_243	Func: 1.0
+Name: r2_243-(INV)	Func: 1.0
+Name: r2_188	Func: 1.0
+Name: r2_174	Func: 1.0
+Name: r2_199	Func: 1.0
+Name: r2_246	Func: 1.0
+Name: r2_187	Func: 1.0
+Name: r2_224	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: r2_188-(INV)	Func-Inv: 1.0
+Name: r2_243	Func-Inv: 1.0
+Name: r2_191-(INV)	Func-Inv: 1.0
+Name: r2_243-(INV)	Func-Inv: 1.0
+Name: r2_98-(INV)	Func-Inv: 1.0
+Name: r2_152-(INV)	Func-Inv: 1.0
+Name: r2_187-(INV)	Func-Inv: 1.0
+Name: r2_158-(INV)	Func-Inv: 1.0
+Name: r2_246	Func-Inv: 1.0
+Name: r2_224	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+iter: 0
+Number of refined train pairs: 83687 from 83687 annotated pairs
+Number of overall refined and inferred train pairs: 83687
+Precision: 1.0000	Recall: 0.2000	F1-Score: 0.3333
+recall of annotated true pairs: 83687/83687
+precision of annotated true pairs: 83687/83687
+Time to normalize features: 0.03 seconds
+Correctly inferred 19732 pairs.
+Total inferred 23688 pairs.
+Time to normalize features: 0.04 seconds
+Hits@1: 0.117 Hits@10: 0.192 MRR: 0.143
+
+Injected 23688 pairs out of 23688 pairs
+Probabilistic Inference:   0%|          | 0/10 [00:00<?, ?it/s]Probabilistic Inference:  10%|█         | 1/10 [10:15<1:32:16, 615.17s/it]Probabilistic Inference:  20%|██        | 2/10 [21:10<1:25:10, 638.80s/it]Probabilistic Inference:  30%|███       | 3/10 [30:21<1:09:50, 598.58s/it]Probabilistic Inference:  40%|████      | 4/10 [39:50<58:41, 586.84s/it]  Probabilistic Inference:  50%|█████     | 5/10 [49:27<48:38, 583.60s/it]Probabilistic Inference:  60%|██████    | 6/10 [58:52<38:29, 577.27s/it]Probabilistic Inference:  70%|███████   | 7/10 [1:08:02<28:24, 568.31s/it]Probabilistic Inference:  80%|████████  | 8/10 [1:17:53<19:11, 575.55s/it]Probabilistic Inference:  90%|█████████ | 9/10 [1:28:05<09:46, 586.74s/it]Probabilistic Inference: 100%|██████████| 10/10 [1:38:08<00:00, 591.72s/it]Probabilistic Inference: 100%|██████████| 10/10 [1:38:08<00:00, 588.80s/it]
+Probabilistic Inference Completed!
+Total time: 5889.948063611984
+iter: 1
+Number of refined train pairs: 98278 from 107375 annotated pairs
+Number of overall refined and inferred train pairs: 98278
+Precision: 0.9770	Recall: 0.2295	F1-Score: 0.3716
+recall of annotated true pairs: 96016/103419
+precision of annotated true pairs: 96016/98278
+Time to normalize features: 0.04 seconds
+Correctly inferred 18628 pairs.
+Total inferred 22347 pairs.
+Time to normalize features: 0.04 seconds
+Hits@1: 0.132 Hits@10: 0.200 MRR: 0.155
+
+Injected 16742 pairs out of 22347 pairs
+Probabilistic Inference:   0%|          | 0/10 [00:00<?, ?it/s]Probabilistic Inference:  10%|█         | 1/10 [11:17<1:41:41, 677.92s/it]Probabilistic Inference:  20%|██        | 2/10 [22:15<1:28:49, 666.21s/it]Probabilistic Inference:  30%|███       | 3/10 [32:20<1:14:25, 637.89s/it]Probabilistic Inference:  40%|████      | 4/10 [42:26<1:02:33, 625.54s/it]Probabilistic Inference:  50%|█████     | 5/10 [52:31<51:30, 618.00s/it]  Probabilistic Inference:  60%|██████    | 6/10 [1:02:44<41:05, 616.45s/it]Probabilistic Inference:  70%|███████   | 7/10 [1:12:50<30:38, 612.97s/it]Probabilistic Inference:  80%|████████  | 8/10 [1:22:55<20:21, 610.51s/it]Probabilistic Inference:  90%|█████████ | 9/10 [1:32:56<10:07, 607.46s/it]

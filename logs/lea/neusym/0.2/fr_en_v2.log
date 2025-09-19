@@ -1,0 +1,88 @@
+
+Exp config:
+ simplify_url: True
+remove_ID_attr: False
+train_ratio: 0.2
+delta_0: 0.5
+delta_1: 0.9
+ea_model: lightea
+print_during_exp: {'paris': False}
+gpu: 4
+
+Construct KGs...
+
+Information of Knowledge Graph (fr_en_v2-KG1):
+- Relation Tuple Number: 105998
+- Attribute Tuple Number: 0
+- Entity Number: 19661
+- Relation Number: 903
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: r813-(INV)	Func: 1.0
+Name: r179	Func: 1.0
+Name: r330-(INV)	Func: 1.0
+Name: r565-(INV)	Func: 1.0
+Name: r773	Func: 1.0
+Name: r763	Func: 1.0
+Name: r714-(INV)	Func: 1.0
+Name: r385	Func: 1.0
+Name: r609-(INV)	Func: 1.0
+Name: r830	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: r609	Func-Inv: 1.0
+Name: r813-(INV)	Func-Inv: 1.0
+Name: r235-(INV)	Func-Inv: 1.0
+Name: r330-(INV)	Func-Inv: 1.0
+Name: r565-(INV)	Func-Inv: 1.0
+Name: r773	Func-Inv: 1.0
+Name: r714-(INV)	Func-Inv: 1.0
+Name: r445-(INV)	Func-Inv: 1.0
+Name: r734	Func-Inv: 1.0
+Name: r495-(INV)	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+
+Information of Knowledge Graph (fr_en_v2-KG2):
+- Relation Tuple Number: 115722
+- Attribute Tuple Number: 0
+- Entity Number: 19993
+- Relation Number: 1208
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: r1445-(INV)	Func: 1.0
+Name: r934	Func: 1.0
+Name: r1445	Func: 1.0
+Name: r1711	Func: 1.0
+Name: r934-(INV)	Func: 1.0
+Name: r1518	Func: 1.0
+Name: r1518-(INV)	Func: 1.0
+Name: r1433	Func: 1.0
+Name: r1908	Func: 1.0
+Name: r966	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: r1445-(INV)	Func-Inv: 1.0
+Name: r934	Func-Inv: 1.0
+Name: r1445	Func-Inv: 1.0
+Name: r934-(INV)	Func-Inv: 1.0
+Name: r1518	Func-Inv: 1.0
+Name: r1711-(INV)	Func-Inv: 1.0
+Name: r1518-(INV)	Func-Inv: 1.0
+Name: r1433	Func-Inv: 1.0
+Name: r966	Func-Inv: 1.0
+Name: r966-(INV)	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+iter: 0
+Probabilistic Inference:   0%|          | 0/20 [00:00<?, ?it/s]Probabilistic Inference:   5%|▌         | 1/20 [00:15<04:54, 15.52s/it]Probabilistic Inference:  10%|█         | 2/20 [00:30<04:29, 14.99s/it]Probabilistic Inference:  15%|█▌        | 3/20 [00:45<04:14, 14.94s/it]Probabilistic Inference:  20%|██        | 4/20 [00:59<03:59, 14.95s/it]Probabilistic Inference:  25%|██▌       | 5/20 [01:14<03:42, 14.85s/it]Probabilistic Inference:  30%|███       | 6/20 [01:29<03:25, 14.69s/it]Probabilistic Inference:  35%|███▌      | 7/20 [01:43<03:10, 14.64s/it]Probabilistic Inference:  40%|████      | 8/20 [01:58<02:55, 14.59s/it]Probabilistic Inference:  45%|████▌     | 9/20 [02:12<02:40, 14.60s/it]

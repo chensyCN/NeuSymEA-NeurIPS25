@@ -1,0 +1,115 @@
+
+Exp config:
+ simplify_url: True
+remove_ID_attr: False
+train_ratio: 0.2
+delta_0: 0.5
+delta_1: 0.9
+ea_model: lightea
+print_during_exp: {'paris': False}
+gpu: 2
+
+Construct KGs...
+
+Information of Knowledge Graph (EN_DE_1M-KG1):
+- Relation Tuple Number: 7922555
+- Attribute Tuple Number: 0
+- Entity Number: 1160306
+- Relation Number: 596
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: r1_314	Func: 1.0
+Name: r1_596-(INV)	Func: 1.0
+Name: r1_596	Func: 1.0
+Name: r1_524	Func: 1.0
+Name: r1_524-(INV)	Func: 1.0
+Name: r1_565-(INV)	Func: 1.0
+Name: r1_569	Func: 1.0
+Name: r1_436	Func: 1.0
+Name: r1_569-(INV)	Func: 1.0
+Name: r1_379	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: r1_423-(INV)	Func-Inv: 1.0
+Name: r1_314-(INV)	Func-Inv: 1.0
+Name: r1_596-(INV)	Func-Inv: 1.0
+Name: r1_565	Func-Inv: 1.0
+Name: r1_596	Func-Inv: 1.0
+Name: r1_524	Func-Inv: 1.0
+Name: r1_543	Func-Inv: 1.0
+Name: r1_524-(INV)	Func-Inv: 1.0
+Name: r1_569	Func-Inv: 1.0
+Name: r1_436-(INV)	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+
+Information of Knowledge Graph (EN_DE_1M-KG2):
+- Relation Tuple Number: 3000489
+- Attribute Tuple Number: 0
+- Entity Number: 849646
+- Relation Number: 247
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: r2_174	Func: 1.0
+Name: r2_226	Func: 1.0
+Name: r2_181	Func: 1.0
+Name: r2_187	Func: 1.0
+Name: r2_246	Func: 1.0
+Name: r2_242	Func: 1.0
+Name: r2_246-(INV)	Func: 1.0
+Name: r2_191	Func: 1.0
+Name: r2_244	Func: 1.0
+Name: r2_202	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: r2_187-(INV)	Func-Inv: 1.0
+Name: r2_191-(INV)	Func-Inv: 1.0
+Name: r2_174-(INV)	Func-Inv: 1.0
+Name: r2_246	Func-Inv: 1.0
+Name: r2_167-(INV)	Func-Inv: 1.0
+Name: r2_226-(INV)	Func-Inv: 1.0
+Name: r2_242-(INV)	Func-Inv: 1.0
+Name: r2_246-(INV)	Func-Inv: 1.0
+Name: r2_218-(INV)	Func-Inv: 1.0
+Name: r2_244-(INV)	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+iter: 0
+Probabilistic Inference:   0%|          | 0/20 [00:00<?, ?it/s]Probabilistic IProbabilistic Inference:   5%|▌         | 1/20 [13:30<4:16Probabilistic IProbabilistic Inference:  10%|█         | 2/20 [33:37<5:13Probabilistic InProbabilistic Inference:  15%|█▌        | 3/20 [50:11<4:4Probabilistic InfProbabilistic Inference:  20%|██        | 4/20 [1:06:45<4:Probabilistic InfeProbabilistic Inference:  25%|██▌       | 5/20 [1:23:17<4Probabilistic InferProbabilistic Inference:  30%|███       | 6/20 [1:44:07<4Probabilistic InferProbabilistic Inference:  35%|███▌      | 7/20 [2:06:08<4Probabilistic InferProbabilistic Inference:  40%|████      | 8/20 [2:23:32<3Probabilistic InferProbabilistic Inference:  45%|████▌     | 9/20 [2:41:55<3Probabilistic InferProbabilistic Inference:  50%|█████     | 10/20 [2:59:27<3Probabilistic InferProbabilistic Inference:  55%|█████▌    | 11/20 [3:16:53<2Probabilistic InferProbabilistic Inference:  60%|██████    | 12/20 [3:34:32<2Probabilistic InferProbabilistic Inference:  65%|██████▌   | 13/20 [3:51:48<2Probabilistic InferProbabilistic Inference:  70%|███████   | 14/20 [4:08:09<1Probabilistic InferProbabilistic Inference:  75%|███████▌  | 15/20 [4:25:52<1Probabilistic InferProbabilistic Inference:  80%|████████  | 16/20 [4:44:45<1Probabilistic InferProbabilistic Inference:  85%|████████▌ | 17/20 [5:02:20<5Probabilistic InferProbabilistic Inference:  90%|█████████ | 18/20 [5:19:05Probabilistic InferProbabilistic Inference:  95%|█████████▌| 19/20 [5:35:24Probabilistic InferProbabilistic Inference: 100%|██████████| 20/20 [5:51:46<00:00, 1014.01s/it]Probabilistic Inference: 100%|██████████| 20/20 [5:51:46
+Probabilistic Infer
+Probabilistic Inference Completed!
+Total time: 21109.303566217422
+Number of refined train pairs: 83679 from 83687 annotated pairs
+Number of overall refined and inferred train pairs: 83679
+Precision: 1.0000	Recall: 0.2000	F1-Score: 0.3333
+recall of annotated true pairs: 83679/83687
+precision of annotated true pairs: 83679/83679
+Traceback (most recent call last):
+  File "run-neusym.py", line 147, in <module>
+    align(kgs=kgs)
+  File "run-neusym.py", line 119, in align
+    new_pairs = ea_model.train(epoch=20)
+  File "/home/sychen/entity_alignment/neuSymEA_ICLR/ea/model.py", line 304, in train
+    features = self.get_features(self.train_pair)
+  File "/home/sychen/entity_alignment/neuSymEA_ICLR/ea/model.py", line 266, in get_features
+    new_ent_feature = batch_sparse_matmul(ent_ent_graph,ent_feature)
+  File "/home/sychen/entity_alignment/neuSymEA_ICLR/ea/lightea_functions.py", line 88, in batch_sparse_matmul
+    temp_result = tf.sparse.sparse_dense_matmul(sparse_tensor,dense_tensor[:, i*batch_size:(i+1)*batch_size])
+  File "/home/sychen/anaconda3/envs/ea-gpu/lib/python3.7/site-packages/tensorflow/python/ops/sparse_ops.py", line 2654, in sparse_tensor_dense_matmul
+    adjoint_b=adjoint_b)
+  File "/home/sychen/anaconda3/envs/ea-gpu/lib/python3.7/site-packages/tensorflow/python/ops/gen_sparse_ops.py", line 3051, in sparse_tensor_dense_mat_mul
+    _ops.raise_from_not_ok_status(e, name)
+  File "/home/sychen/anaconda3/envs/ea-gpu/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 6941, in raise_from_not_ok_status
+    six.raise_from(core._status_to_exception(e.code, message), None)
+  File "<string>", line 3, in raise_from
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Cannot use GPU when output.shape[1] * nnz(a) > 2^31 [Op:SparseTensorDenseMatMul]

@@ -1,0 +1,106 @@
+
+Exp config:
+ simplify_url: True
+remove_ID_attr: False
+train_ratio: 0.2
+delta_0: 0.5
+delta_1: 0.9
+ea_model: lightea
+print_during_exp: {'paris': False}
+gpu: 1
+
+Construct KGs...
+
+Information of Knowledge Graph (EN_FR_1M-KG1):
+- Relation Tuple Number: 8150656
+- Attribute Tuple Number: 0
+- Entity Number: 1211270
+- Relation Number: 595
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: r1_559-(INV)	Func: 1.0
+Name: r1_548-(INV)	Func: 1.0
+Name: r1_537	Func: 1.0
+Name: r1_582	Func: 1.0
+Name: r1_590	Func: 1.0
+Name: r1_583	Func: 1.0
+Name: r1_435-(INV)	Func: 1.0
+Name: r1_412	Func: 1.0
+Name: r1_531	Func: 1.0
+Name: r1_585	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: r1_453-(INV)	Func-Inv: 1.0
+Name: r1_548	Func-Inv: 1.0
+Name: r1_582-(INV)	Func-Inv: 1.0
+Name: r1_537-(INV)	Func-Inv: 1.0
+Name: r1_590-(INV)	Func-Inv: 1.0
+Name: r1_583	Func-Inv: 1.0
+Name: r1_556-(INV)	Func-Inv: 1.0
+Name: r1_412-(INV)	Func-Inv: 1.0
+Name: r1_531-(INV)	Func-Inv: 1.0
+Name: r1_585	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+
+Information of Knowledge Graph (EN_FR_1M-KG2):
+- Relation Tuple Number: 4268719
+- Attribute Tuple Number: 0
+- Entity Number: 1176869
+- Relation Number: 400
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: r2_346-(INV)	Func: 1.0
+Name: r2_261	Func: 1.0
+Name: r2_246	Func: 1.0
+Name: r2_399	Func: 1.0
+Name: r2_19-(INV)	Func: 1.0
+Name: r2_399-(INV)	Func: 1.0
+Name: r2_300	Func: 1.0
+Name: r2_357	Func: 1.0
+Name: r2_356-(INV)	Func: 1.0
+Name: r2_332-(INV)	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: r2_376-(INV)	Func-Inv: 1.0
+Name: r2_246-(INV)	Func-Inv: 1.0
+Name: r2_346-(INV)	Func-Inv: 1.0
+Name: r2_261-(INV)	Func-Inv: 1.0
+Name: r2_399	Func-Inv: 1.0
+Name: r2_399-(INV)	Func-Inv: 1.0
+Name: r2_285-(INV)	Func-Inv: 1.0
+Name: r2_357-(INV)	Func-Inv: 1.0
+Name: r2_119	Func-Inv: 1.0
+Name: r2_356	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+Number of refined train pairs: 97712 from 97712 annotated pairs
+Number of overall refined and inferred train pairs: 97712
+Precision: 1.0000	Recall: 0.2000	F1-Score: 0.3333
+recall of annotated true pairs: 97712/97712
+precision of annotated true pairs: 97712/97712
+Time to normalize features: 0.04 seconds
+new generated pairs = 26238
+rest pairs = 364613
+Time to normalize features: 0.04 seconds
+Hits@1: 0.093 Hits@10: 0.176 MRR: 0.123
+
+Time to normalize features: 0.04 seconds
+new generated pairs = 15559
+rest pairs = 349054
+Time to normalize features: 0.04 seconds
+Hits@1: 0.107 Hits@10: 0.205 MRR: 0.141
+
+Time to normalize features: 0.04 seconds
+Hits@1: 0.119 Hits@10: 0.221 MRR: 0.153
+

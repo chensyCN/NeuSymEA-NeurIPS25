@@ -1,0 +1,106 @@
+
+Exp config:
+ simplify_url: True
+remove_ID_attr: False
+train_ratio: 0.2
+delta_0: 0.5
+delta_1: 0.9
+ea_model: lightea
+print_during_exp: {'paris': False}
+gpu: 4
+
+Construct KGs...
+
+Information of Knowledge Graph (D_W_100K-KG1):
+- Relation Tuple Number: 616457
+- Attribute Tuple Number: 0
+- Entity Number: 100000
+- Relation Number: 318
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: http://dbpedia.org/ontology/creativeDirector	Func: 1.0
+Name: http://dbpedia.org/ontology/timeZone	Func: 1.0
+Name: http://dbpedia.org/ontology/endingTheme	Func: 1.0
+Name: http://dbpedia.org/ontology/lieutenancyArea	Func: 1.0
+Name: http://dbpedia.org/ontology/lieutenancyArea-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/homeArena	Func: 1.0
+Name: http://dbpedia.org/ontology/metropolitanBorough	Func: 1.0
+Name: http://dbpedia.org/ontology/highschool	Func: 1.0
+Name: http://dbpedia.org/ontology/metropolitanBorough-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/provost	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: http://dbpedia.org/ontology/creativeDirector-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/timeZone-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/lieutenancyArea	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/lieutenancyArea-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/endingTheme-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/homeArena-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/metropolitanBorough	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/metropolitanBorough-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/highschool-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/provost	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+
+Information of Knowledge Graph (D_W_100K-KG2):
+- Relation Tuple Number: 588203
+- Attribute Tuple Number: 0
+- Entity Number: 93566
+- Relation Number: 239
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: http://www.wikidata.org/entity/P85	Func: 1.0
+Name: http://www.wikidata.org/entity/P1035	Func: 1.0
+Name: http://www.wikidata.org/entity/P85-(INV)	Func: 1.0
+Name: http://www.wikidata.org/entity/P1035-(INV)	Func: 1.0
+Name: http://www.wikidata.org/entity/P1313	Func: 1.0
+Name: http://www.wikidata.org/entity/P533	Func: 1.0
+Name: http://www.wikidata.org/entity/P533-(INV)	Func: 1.0
+Name: http://www.wikidata.org/entity/P66	Func: 1.0
+Name: http://www.wikidata.org/entity/P66-(INV)	Func: 1.0
+Name: http://www.wikidata.org/entity/P263	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: http://www.wikidata.org/entity/P85	Func-Inv: 1.0
+Name: http://www.wikidata.org/entity/P736-(INV)	Func-Inv: 1.0
+Name: http://www.wikidata.org/entity/P1035	Func-Inv: 1.0
+Name: http://www.wikidata.org/entity/P85-(INV)	Func-Inv: 1.0
+Name: http://www.wikidata.org/entity/P1035-(INV)	Func-Inv: 1.0
+Name: http://www.wikidata.org/entity/P1313-(INV)	Func-Inv: 1.0
+Name: http://www.wikidata.org/entity/P533	Func-Inv: 1.0
+Name: http://www.wikidata.org/entity/P533-(INV)	Func-Inv: 1.0
+Name: http://www.wikidata.org/entity/P66	Func-Inv: 1.0
+Name: http://www.wikidata.org/entity/P263-(INV)	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+Number of refined train pairs: 20000 from 20000 annotated pairs
+Number of overall refined and inferred train pairs: 20000
+Precision: 1.0000	Recall: 0.2000	F1-Score: 0.3333
+recall of annotated true pairs: 20000/20000
+precision of annotated true pairs: 20000/20000
+Time to normalize features: 0.13 seconds
+new generated pairs = 54458
+rest pairs = 25542
+Time to normalize features: 0.13 seconds
+Hits@1: 0.795 Hits@10: 0.911 MRR: 0.836
+
+Time to normalize features: 0.04 seconds
+new generated pairs = 8474
+rest pairs = 17068
+Time to normalize features: 0.13 seconds
+Hits@1: 0.855 Hits@10: 0.946 MRR: 0.888
+
+Time to normalize features: 0.13 seconds
+Hits@1: 0.867 Hits@10: 0.953 MRR: 0.898
+

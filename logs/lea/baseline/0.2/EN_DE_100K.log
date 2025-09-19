@@ -1,0 +1,106 @@
+
+Exp config:
+ simplify_url: True
+remove_ID_attr: False
+train_ratio: 0.2
+delta_0: 0.5
+delta_1: 0.9
+ea_model: lightea
+print_during_exp: {'paris': False}
+gpu: 4
+
+Construct KGs...
+
+Information of Knowledge Graph (EN_DE_100K-KG1):
+- Relation Tuple Number: 622588
+- Attribute Tuple Number: 0
+- Entity Number: 100000
+- Relation Number: 323
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: http://dbpedia.org/ontology/engineer	Func: 1.0
+Name: http://dbpedia.org/ontology/engineer-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/chancellor	Func: 1.0
+Name: http://dbpedia.org/ontology/college-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/largestSettlement	Func: 1.0
+Name: http://dbpedia.org/ontology/lyrics-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/largestSettlement-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/beatifiedBy	Func: 1.0
+Name: http://dbpedia.org/ontology/canonizedBy	Func: 1.0
+Name: http://dbpedia.org/ontology/releaseLocation	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: http://dbpedia.org/ontology/engineer	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/engineer-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/chancellor-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/college	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/lyrics	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/largestSettlement	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/largestSettlement-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/beatifiedBy-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/canonizedBy-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/releaseLocation	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+
+Information of Knowledge Graph (EN_DE_100K-KG2):
+- Relation Tuple Number: 629395
+- Attribute Tuple Number: 0
+- Entity Number: 100000
+- Relation Number: 170
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: http://dbpedia.org/ontology/secretaryGeneral	Func: 1.0
+Name: http://dbpedia.org/ontology/secretaryGeneral-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/largestCity	Func: 1.0
+Name: http://dbpedia.org/ontology/largestCity-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/state	Func: 1.0
+Name: http://dbpedia.org/ontology/secondLeader	Func: 1.0
+Name: http://dbpedia.org/ontology/keyPerson	Func: 1.0
+Name: http://dbpedia.org/ontology/keyPerson-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/secondLeader-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/foundedBy	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: http://dbpedia.org/ontology/secretaryGeneral	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/secretaryGeneral-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/largestCity	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/largestCity-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/secondLeader	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/keyPerson	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/keyPerson-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/secondLeader-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/musicBy	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/foundedBy	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+Number of refined train pairs: 20000 from 20000 annotated pairs
+Number of overall refined and inferred train pairs: 20000
+Precision: 1.0000	Recall: 0.2000	F1-Score: 0.3333
+recall of annotated true pairs: 20000/20000
+precision of annotated true pairs: 20000/20000
+Time to normalize features: 0.16 seconds
+new generated pairs = 59698
+rest pairs = 20302
+Time to normalize features: 0.15 seconds
+Hits@1: 0.813 Hits@10: 0.912 MRR: 0.848
+
+Time to normalize features: 0.04 seconds
+new generated pairs = 5960
+rest pairs = 14342
+Time to normalize features: 0.13 seconds
+Hits@1: 0.851 Hits@10: 0.932 MRR: 0.880
+
+Time to normalize features: 0.13 seconds
+Hits@1: 0.854 Hits@10: 0.931 MRR: 0.882
+

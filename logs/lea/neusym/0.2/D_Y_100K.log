@@ -1,0 +1,189 @@
+
+Exp config:
+ simplify_url: True
+remove_ID_attr: False
+train_ratio: 0.2
+delta_0: 0.5
+delta_1: 0.9
+ea_model: lightea
+print_during_exp: {'paris': False}
+gpu: 4
+
+Construct KGs...
+
+Information of Knowledge Graph (D_Y_100K-KG1):
+- Relation Tuple Number: 576547
+- Attribute Tuple Number: 0
+- Entity Number: 100000
+- Relation Number: 230
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: http://dbpedia.org/ontology/largestCity	Func: 1.0
+Name: http://dbpedia.org/ontology/county	Func: 1.0
+Name: http://dbpedia.org/ontology/frazioni	Func: 1.0
+Name: http://dbpedia.org/ontology/frazioni-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/parentCompany	Func: 1.0
+Name: http://dbpedia.org/ontology/arrondissement	Func: 1.0
+Name: http://dbpedia.org/ontology/incumbent	Func: 1.0
+Name: http://dbpedia.org/ontology/sourceRegion-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/incumbent-(INV)	Func: 1.0
+Name: http://dbpedia.org/ontology/inflow-(INV)	Func: 1.0
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: http://dbpedia.org/ontology/head-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/district-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/frazioni	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/frazioni-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/largestCity-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/county-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/arrondissement-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/parentCompany-(INV)	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/incumbent	Func-Inv: 1.0
+Name: http://dbpedia.org/ontology/sourceRegion	Func-Inv: 1.0
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+
+Information of Knowledge Graph (D_Y_100K-KG2):
+- Relation Tuple Number: 865265
+- Attribute Tuple Number: 0
+- Entity Number: 100000
+- Relation Number: 31
+- Attribute Number: 0
+- Literal Number: 0
+- Functionality Statistics:
+--- TOP-10 Relations (Func) ---
+Name: isKnownFor	Func: 1.0
+Name: wasBornIn	Func: 1.0
+Name: isKnownFor-(INV)	Func: 1.0
+Name: diedIn	Func: 1.0
+Name: directed-(INV)	Func: 0.9713234166538874
+Name: hasOfficialLanguage	Func: 0.9705882352941176
+Name: hasAcademicAdvisor	Func: 0.9665271966527197
+Name: edited-(INV)	Func: 0.966389591615468
+Name: isInterestedIn	Func: 0.9444444444444444
+Name: isMarriedTo-(INV)	Func: 0.9370352007932573
+......
+--- TOP-10 Relations (Func-Inv) ---
+Name: isKnownFor	Func-Inv: 1.0
+Name: wasBornIn-(INV)	Func-Inv: 1.0
+Name: isKnownFor-(INV)	Func-Inv: 1.0
+Name: diedIn-(INV)	Func-Inv: 1.0
+Name: directed	Func-Inv: 0.9713234166538874
+Name: hasOfficialLanguage-(INV)	Func-Inv: 0.9705882352941176
+Name: hasAcademicAdvisor-(INV)	Func-Inv: 0.9665271966527197
+Name: edited	Func-Inv: 0.966389591615468
+Name: isInterestedIn-(INV)	Func-Inv: 0.9444444444444444
+Name: isMarriedTo	Func-Inv: 0.9370352007932573
+......
+--- TOP-10 Attributes (Func) ---
+......
+--- TOP-10 Attributes (Func-Inv) ---
+......
+iter: 0
+Probabilistic Inference:   0%|          | 0/20 [00:00<?, ?it/s]Probabilistic Inference:   5%|▌         | 1/20 [01:45<33:16, 105.09s/it]Probabilistic Inference:  10%|█         | 2/20 [03:54<35:50, 119.46s/it]Probabilistic Inference:  15%|█▌        | 3/20 [05:40<32:06, 113.30s/it]Probabilistic Inference:  20%|██        | 4/20 [06:55<26:08, 98.02s/it] Probabilistic Inference:  25%|██▌       | 5/20 [08:00<21:32, 86.19s/it]Probabilistic Inference:  30%|███       | 6/20 [09:05<18:24, 78.88s/it]Probabilistic Inference:  35%|███▌      | 7/20 [10:52<19:06, 88.20s/it]Probabilistic Inference:  40%|████      | 8/20 [13:58<23:52, 119.37s/it]Probabilistic Inference:  45%|████▌     | 9/20 [17:04<25:40, 140.09s/it]Probabilistic Inference:  50%|█████     | 10/20 [19:44<24:23, 146.32s/it]Probabilistic Inference:  55%|█████▌    | 11/20 [22:14<22:08, 147.57s/it]Probabilistic Inference:  60%|██████    | 12/20 [23:52<17:38, 132.37s/it]Probabilistic Inference:  65%|██████▌   | 13/20 [25:16<13:44, 117.84s/it]Probabilistic Inference:  70%|███████   | 14/20 [26:23<10:14, 102.34s/it]Probabilistic Inference:  75%|███████▌  | 15/20 [27:38<07:50, 94.18s/it] Probabilistic Inference:  80%|████████  | 16/20 [29:18<06:22, 95.73s/it]Probabilistic Inference:  85%|████████▌ | 17/20 [32:19<06:04, 121.56s/it]Probabilistic Inference:  90%|█████████ | 18/20 [35:25<04:41, 140.76s/it]Probabilistic Inference:  95%|█████████▌| 19/20 [38:05<02:26, 146.80s/it]Probabilistic Inference: 100%|██████████| 20/20 [40:33<00:00, 146.94s/it]Probabilistic Inference: 100%|██████████| 20/20 [40:33<00:00, 121.66s/it]
+Probabilistic Inference Completed!
+Total time: 2433.595592021942
+Number of refined train pairs: 19993 from 20000 annotated pairs
+Number of overall refined and inferred train pairs: 19993
+Precision: 1.0000	Recall: 0.1999	F1-Score: 0.3332
+recall of annotated true pairs: 19993/20000
+precision of annotated true pairs: 19993/19993
+Time to normalize features: 0.16 seconds
+Correctly inferred 73872 pairs.
+Total inferred 74163 pairs.
+Time to normalize features: 0.15 seconds
+Hits@1: 0.961 Hits@10: 0.990 MRR: 0.972
+
+Injected 74163 pairs out of 74163 pairs
+iter: 1
+Probabilistic Inference:   0%|          | 0/10 [00:00<?, ?it/s]Probabilistic Inference:  10%|█         | 1/10 [02:08<19:12, 128.04s/it]Probabilistic Inference:  20%|██        | 2/10 [05:49<24:21, 182.73s/it]Probabilistic Inference:  30%|███       | 3/10 [09:20<22:50, 195.72s/it]Probabilistic Inference:  40%|████      | 4/10 [12:13<18:42, 187.04s/it]Probabilistic Inference:  50%|█████     | 5/10 [14:17<13:41, 164.21s/it]Probabilistic Inference:  60%|██████    | 6/10 [15:45<09:13, 138.30s/it]Probabilistic Inference:  70%|███████   | 7/10 [17:11<06:03, 121.28s/it]Probabilistic Inference:  80%|████████  | 8/10 [19:01<03:55, 117.56s/it]Probabilistic Inference:  90%|█████████ | 9/10 [22:16<02:21, 141.87s/it]Probabilistic Inference: 100%|██████████| 10/10 [25:41<00:00, 161.36s/it]Probabilistic Inference: 100%|██████████| 10/10 [25:41<00:00, 154.19s/it]
+Probabilistic Inference Completed!
+Total time: 1542.780470609665
+Number of refined train pairs: 88915 from 94163 annotated pairs
+Number of overall refined and inferred train pairs: 88915
+Precision: 0.9985	Recall: 0.8878	F1-Score: 0.9399
+recall of annotated true pairs: 88779/93872
+precision of annotated true pairs: 88779/88915
+Time to normalize features: 0.05 seconds
+Correctly inferred 7653 pairs.
+Total inferred 7827 pairs.
+Time to normalize features: 0.17 seconds
+Hits@1: 0.975 Hits@10: 0.996 MRR: 0.983
+
+Injected 2753 pairs out of 7827 pairs
+iter: 2
+Probabilistic Inference:   0%|          | 0/10 [00:00<?, ?it/s]Probabilistic Inference:  10%|█         | 1/10 [02:36<23:32, 156.94s/it]Probabilistic Inference:  20%|██        | 2/10 [04:29<17:25, 130.65s/it]Probabilistic Inference:  30%|███       | 3/10 [05:56<12:57, 111.01s/it]Probabilistic Inference:  40%|████      | 4/10 [07:30<10:24, 104.05s/it]Probabilistic Inference:  50%|█████     | 5/10 [10:42<11:20, 136.00s/it]Probabilistic Inference:  60%|██████    | 6/10 [14:26<11:03, 165.75s/it]Probabilistic Inference:  70%|███████   | 7/10 [17:18<08:23, 167.82s/it]Probabilistic Inference:  80%|████████  | 8/10 [19:33<05:14, 157.30s/it]Probabilistic Inference:  90%|█████████ | 9/10 [21:22<02:22, 142.17s/it]Probabilistic Inference: 100%|██████████| 10/10 [22:45<00:00, 124.14s/it]Probabilistic Inference: 100%|██████████| 10/10 [22:45<00:00, 136.59s/it]
+Probabilistic Inference Completed!
+Total time: 1367.4648537635803
+Number of refined train pairs: 91065 from 96916 annotated pairs
+Number of overall refined and inferred train pairs: 91065
+Precision: 0.9976	Recall: 0.9084	F1-Score: 0.9509
+recall of annotated true pairs: 90844/96491
+precision of annotated true pairs: 90844/91065
+Time to normalize features: 0.03 seconds
+Correctly inferred 5827 pairs.
+Total inferred 5950 pairs.
+Time to normalize features: 0.16 seconds
+Hits@1: 0.975 Hits@10: 0.996 MRR: 0.983
+
+Injected 346 pairs out of 5950 pairs
+iter: 3
+Probabilistic Inference:   0%|          | 0/10 [00:00<?, ?it/s]Probabilistic Inference:  10%|█         | 1/10 [01:17<11:40, 77.80s/it]Probabilistic Inference:  20%|██        | 2/10 [02:33<10:14, 76.77s/it]Probabilistic Inference:  30%|███       | 3/10 [03:49<08:55, 76.45s/it]Probabilistic Inference:  40%|████      | 4/10 [04:55<07:13, 72.33s/it]Probabilistic Inference:  50%|█████     | 5/10 [06:03<05:52, 70.53s/it]Probabilistic Inference:  60%|██████    | 6/10 [07:15<04:44, 71.12s/it]Probabilistic Inference:  70%|███████   | 7/10 [08:29<03:36, 72.12s/it]Probabilistic Inference:  80%|████████  | 8/10 [09:42<02:24, 72.24s/it]Probabilistic Inference:  90%|█████████ | 9/10 [10:50<01:10, 70.89s/it]Probabilistic Inference: 100%|██████████| 10/10 [12:01<00:00, 71.12s/it]Probabilistic Inference: 100%|██████████| 10/10 [12:01<00:00, 72.18s/it]
+Probabilistic Inference Completed!
+Total time: 722.7550106048584
+Number of refined train pairs: 91248 from 97262 annotated pairs
+Number of overall refined and inferred train pairs: 91248
+Precision: 0.9972	Recall: 0.9100	F1-Score: 0.9516
+recall of annotated true pairs: 90997/96774
+precision of annotated true pairs: 90997/91248
+Time to normalize features: 0.03 seconds
+Correctly inferred 5869 pairs.
+Total inferred 5982 pairs.
+Time to normalize features: 0.15 seconds
+Hits@1: 0.976 Hits@10: 0.996 MRR: 0.984
+
+Injected 249 pairs out of 5982 pairs
+iter: 4
+Probabilistic Inference:   0%|          | 0/10 [00:00<?, ?it/s]Probabilistic Inference:  10%|█         | 1/10 [01:12<10:48, 72.04s/it]Probabilistic Inference:  20%|██        | 2/10 [02:17<09:07, 68.41s/it]Probabilistic Inference:  30%|███       | 3/10 [03:30<08:12, 70.33s/it]Probabilistic Inference:  40%|████      | 4/10 [04:42<07:04, 70.78s/it]Probabilistic Inference:  50%|█████     | 5/10 [05:56<06:01, 72.29s/it]Probabilistic Inference:  60%|██████    | 6/10 [07:10<04:50, 72.65s/it]Probabilistic Inference:  70%|███████   | 7/10 [08:26<03:41, 73.71s/it]Probabilistic Inference:  80%|████████  | 8/10 [09:34<02:23, 71.98s/it]Probabilistic Inference:  90%|█████████ | 9/10 [10:50<01:13, 73.22s/it]Probabilistic Inference: 100%|██████████| 10/10 [12:06<00:00, 74.25s/it]Probabilistic Inference: 100%|██████████| 10/10 [12:06<00:00, 72.70s/it]
+Probabilistic Inference Completed!
+Total time: 727.7171971797943
+Number of refined train pairs: 91431 from 97511 annotated pairs
+Number of overall refined and inferred train pairs: 91431
+Precision: 0.9971	Recall: 0.9116	F1-Score: 0.9524
+recall of annotated true pairs: 91162/96986
+precision of annotated true pairs: 91162/91431
+Time to normalize features: 0.03 seconds
+Correctly inferred 5743 pairs.
+Total inferred 5854 pairs.
+Time to normalize features: 0.14 seconds
+Hits@1: 0.974 Hits@10: 0.995 MRR: 0.982
+
+Injected 73 pairs out of 5854 pairs
+Probabilistic Inference:   0%|          | 0/10 [00:00<?, ?it/s]Probabilistic Inference:  10%|█         | 1/10 [01:12<10:52, 72.48s/it]Probabilistic Inference:  20%|██        | 2/10 [02:28<09:56, 74.62s/it]Probabilistic Inference:  30%|███       | 3/10 [03:47<08:56, 76.69s/it]Probabilistic Inference:  40%|████      | 4/10 [05:02<07:36, 76.12s/it]Probabilistic Inference:  50%|█████     | 5/10 [06:22<06:26, 77.30s/it]Probabilistic Inference:  60%|██████    | 6/10 [07:39<05:09, 77.26s/it]Probabilistic Inference:  70%|███████   | 7/10 [08:55<03:50, 76.97s/it]Probabilistic Inference:  80%|████████  | 8/10 [10:16<02:36, 78.19s/it]Probabilistic Inference:  90%|█████████ | 9/10 [11:32<01:17, 77.35s/it]Probabilistic Inference: 100%|██████████| 10/10 [12:55<00:00, 79.07s/it]Probabilistic Inference: 100%|██████████| 10/10 [12:55<00:00, 77.52s/it]
+Probabilistic Inference Completed!
+Total time: 775.8108644485474
+Number of refined train pairs: 91453 from 97584 annotated pairs
+Number of overall refined and inferred train pairs: 91453
+Precision: 0.9969	Recall: 0.9117	F1-Score: 0.9524
+recall of annotated true pairs: 91170/97036
+precision of annotated true pairs: 91170/91453
+Time to normalize features: 0.14 seconds
+new generated pairs = 76878
+rest pairs = 3122
+Time to normalize features: 0.15 seconds
+Hits@1: 0.974 Hits@10: 0.995 MRR: 0.982
+
+Time to normalize features: 0.03 seconds
+new generated pairs = 790
+rest pairs = 2332
+Time to normalize features: 0.14 seconds
+Hits@1: 0.977 Hits@10: 0.996 MRR: 0.984
+
+Time to normalize features: 0.14 seconds
+Hits@1: 0.975 Hits@10: 0.995 MRR: 0.983
+
