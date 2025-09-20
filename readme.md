@@ -1,6 +1,8 @@
 
 
-### Code for NeurIPS'25 paper  [Neuro-Symbolic Entity Alignment via Variational Inference](https://arxiv.org/abs/2410.04153)
+
+NeuSymEA is an open-source entity alignment framework driven by neural-symbolic reasoning, offering an efficient and interpretable solution for large-scale knowledge fusion. This work has been accepted by NeurIPS'25: [Neuro-Symbolic Entity Alignment via Variational Inference](https://arxiv.org/abs/2410.04153).
+
 
 ## Quick Start
 
