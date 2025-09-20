@@ -34,6 +34,19 @@ python run-paris.py --dataset fr_en --train_ratio 0.01
 python explain.py
 ```
 
+# 🍀 Citation
+If you find this work helpful, please cite our paper:
+```
+@inproceedings{chen2025neusymea,
+title={NeuSym{EA}: Neuro-symbolic Entity Alignment via Variational Inference},
+author={Shengyuan Chen, Zheng Yuan, Qinggang Zhang, Wen Hua, Jiannong Cao, Xiao Huang},
+booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+year={2025},
+url={https://openreview.net/forum?id=SAbQLqf8XL}
+}
+```
+
+
 ## Acknowledgement
 
 The code is based on [PRASE](https://github.com/qizhyuan/PRASE-Python), [Dual-AMN](https://github.com/MaoXinn/Dual-AMN), and [LightEA](https://github.com/MaoXinn/LightEA), the dataset is from [OpenEA benchmark](https://github.com/nju-websoft/OpenEA).
