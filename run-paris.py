@@ -107,14 +107,14 @@ if __name__ == '__main__':
     kgs = construct_kgs(dataset_dir=dataset_path, name=dataset_name, load_chk=None)
 
     # num_workers = max(1, os.cpu_count() - 1)
-    # num_workers = os.cpu_count() - 2 # 2个核心用于系统
+    # num_workers = os.cpu_count() - 2 # 2 cores for system
     num_workers = 40
     kgs.set_worker_num(num_workers)
     
     kgs.set_iteration(10)
 
     
-    # 开始性能分析
+    # Start performance profiling
     print("\nStarting performance profiling...")
     start_time = time.time()
     

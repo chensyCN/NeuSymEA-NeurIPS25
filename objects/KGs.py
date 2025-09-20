@@ -190,19 +190,19 @@ class KGs:
         kg_other = self.kg_l if kg is self.kg_r else self.kg_r
         ent_list = self.__generate_list(kg)
         
-        # 将实体列表分成批次
-        # BATCH_SIZE = 1000  # 可以根据实际情况调整批次大小
+        # Divide entity list into batches
+        # BATCH_SIZE = 1000  # Can be adjusted according to actual situation
         BATCH_SIZE = len(ent_list) // self.workers
         ent_batches = [ent_list[i:i + BATCH_SIZE] for i in range(0, len(ent_list), BATCH_SIZE)]
         
         mgr = mp.Manager()
-        # 使用更大的队列缓冲区
+        # Use larger queue buffer
         ent_queue = mgr.Queue(max(len(ent_batches) * 2, 10))
         rel_ongoing_dict_queue = mgr.Queue()
         rel_norm_dict_queue = mgr.Queue()
         ent_match_tuple_queue = mgr.Queue()
         
-        # 批量放入队列
+        # Put batches into queue
         for batch in ent_batches:
             ent_queue.put(batch)
 
@@ -224,7 +224,7 @@ class KGs:
         tasks = []
         kg_l_ent_embeds, kg_r_ent_embeds = kg.ent_embeddings, kg_other.ent_embeddings
         
-        # 启动工作进程
+        # Start worker processes
         for _ in range(self.workers):
             task = mp.Process(target=one_iteration_one_way_batch, args=(ent_queue, kg_r_fact_dict_by_head,
                                                                     kg_l_fact_dict_by_tail,
@@ -242,17 +242,17 @@ class KGs:
             tasks.append(task)
 
         try:
-            # 等待所有进程完成
+            # Wait for all processes to complete
             for task in tasks:
                 task.join()
 
-            # 处理所有结果
+            # Process all results
             self.__clear_ent_match_and_prob(ent_match, ent_prob)
             while not ent_match_tuple_queue.empty():
                 ent_match_tuple = ent_match_tuple_queue.get()
                 self.__merge_ent_align_result(ent_match, ent_prob, ent_match_tuple[0], ent_match_tuple[1])
 
-            # 清理和更新字典
+            # Clean up and update dictionaries
             rel_ongoing_dict = self.rel_ongoing_dict_l if kg is self.kg_l else self.rel_ongoing_dict_r
             rel_norm_dict = self.rel_norm_dict_l if kg is self.kg_l else self.rel_norm_dict_r
             rel_align_dict = self.rel_align_dict_l if kg is self.kg_l else self.rel_align_dict_r
@@ -273,7 +273,7 @@ class KGs:
             print(f"Error in main process: {str(e)}")
             
         finally:
-            # 确保所有进程都被清理
+            # Ensure all processes are cleaned up
             for task in tasks:
                 if task.is_alive():
                     task.terminate()
@@ -282,9 +282,9 @@ class KGs:
     def __process_queued_results(self, ent_match, ent_prob, 
                                rel_ongoing_dict_queue, rel_norm_dict_queue,
                                ent_match_tuple_queue, batch_size=50):
-        """批量处理队列中的结果"""
+        """Batch process results in queue"""
         try:
-            # 处理实体匹配结果
+            # Process entity matching results
             ent_match_tuples = []
             while len(ent_match_tuples) < batch_size:
                 try:
@@ -296,7 +296,7 @@ class KGs:
                 self.__merge_ent_align_result(ent_match, ent_prob, 
                                             ent_match_tuple[0], ent_match_tuple[1])
 
-            # 处理关系字典结果
+            # Process relation dictionary results
             rel_ongoing_dicts = []
             while len(rel_ongoing_dicts) < batch_size:
                 try:
@@ -307,7 +307,7 @@ class KGs:
             for rel_dict in rel_ongoing_dicts:
                 self.__merge_rel_ongoing_dict(self.rel_ongoing_dict_l, rel_dict)
 
-            # 处理规范化字典结果
+            # Process normalization dictionary results
             rel_norm_dicts = []
             while len(rel_norm_dicts) < batch_size:
                 try:

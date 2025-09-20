@@ -136,23 +136,23 @@ def one_iteration_one_way_batch(queue, kg_r_fact_dict_by_head,
                           kg_l_ent_embeds, kg_r_ent_embeds,
                           fusion_func,
                           theta, epsilon, delta, init=False, ent_align=True):
-    """批处理版本的one_iteration_one_way函数"""
+    """Batch processing version of one_iteration_one_way function"""
     rel_ongoing_dict, rel_norm_dict = dict(), dict()
     
     try:
         while True:
             try:
-                # 获取一批实体ID
+                # Get a batch of entity IDs
                 ent_batch = queue.get_nowait()
             except:
                 break
                 
-            # 批量处理实体
+            # Batch process entities
             for ent_id in ent_batch:
                 ent_align_ongoing_dict = dict()
                 ent_fact_list = kg_l_fact_dict_by_tail.get(ent_id, list())
                 
-                # 处理实体的事实
+                # Process entity facts
                 for (rel_id, head_id) in ent_fact_list:
                     head_counterpart, head_eqv_prob = get_counterpart_id_and_prob(sub_ent_match, sub_ent_prob, head_id)
                     if head_counterpart is None or head_eqv_prob < theta:
@@ -184,7 +184,7 @@ def one_iteration_one_way_batch(queue, kg_r_fact_dict_by_head,
                                         kg_l_ent_embeds, kg_r_ent_embeds, ent_id,
                                         fusion_func, init)
         
-        # 发送结果到队列
+        # Send results to queue
         try:
             rel_ongoing_dict_queue.put(rel_ongoing_dict)
             rel_norm_dict_queue.put(rel_norm_dict)
@@ -195,4 +195,4 @@ def one_iteration_one_way_batch(queue, kg_r_fact_dict_by_head,
     except Exception as e:
         print(f"Error in worker process: {str(e)}")
         
-    return  # 正常返回而不是exit
+    return  # Normal return instead of exit
