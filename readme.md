@@ -1,4 +1,4 @@
-# NeuSymEA 
+# Entity Alignment via Neuro-symbolic Reasoning
 <div align="center">
     <a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-green.svg"/></a>
       <a href="http://makeapullrequest.com"><img src="https://img.shields.io/github/last-commit/DEEP-PolyU/Awesome-GraphRAG?color=blue"/></a>
