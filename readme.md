@@ -1,10 +1,23 @@
+# NeuSymEA 
+<div align="center">
+    <a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-green.svg"/></a>
+      <a href="http://makeapullrequest.com"><img src="https://img.shields.io/github/last-commit/DEEP-PolyU/Awesome-GraphRAG?color=blue"/></a>
+      <a href="https://arxiv.org/abs/2410.04153"><img src="https://img.shields.io/badge/paper-available-brightgreen"/></a>
+</div>
+
+NeuSymEA is an entity alignment framework driven by neuro-symbolic reasoning, offering an efficient and interpretable solution for large-scale knowledge fusion. This work has been accepted by [NeurIPS'25](https://arxiv.org/abs/2410.04153).
 
 
 
-NeuSymEA is an open-source entity alignment framework driven by neural-symbolic reasoning, offering an efficient and interpretable solution for large-scale knowledge fusion. This work has been accepted by NeurIPS'25: [Neuro-Symbolic Entity Alignment via Variational Inference](https://arxiv.org/abs/2410.04153).
+![System Architecture](framework.png)
+
+## 🌟 Key Features
+
+- **❶ Robust entity alignment under low resource setting**: achieving 73.7% hit@1 accuracy on DBP15KFR-EN with only 1% pairs as seed alignments.
+- **❷  Explanation over knowledge graphs:** NeuSymEA's rule mining interpretable alignment results, enabling users to trace the reasoning process of alignment.
 
 
-## Quick Start
+## 🚀 Quick Start
 
 ### 1. Install the required packages
 
