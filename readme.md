@@ -13,7 +13,7 @@ NeuSymEA is an entity alignment framework driven by neuro-symbolic reasoning, of
 
 ## 🌟 Key Features
 
-- **❶ Robust entity alignment under low resource setting**: achieving 73.7% hit@1 accuracy on DBP15KFR-EN with only 1% pairs as seed alignments.
+- **❶ Robust entity alignment under low resource setting**: achieving $73.7\%$ hit@1 accuracy on $DBP15K_{FR-EN}$ with only $1\%$ pairs as seed alignments.
 - **❷  Explanation over knowledge graphs:** NeuSymEA's rule mining interpretable alignment results, enabling users to trace the reasoning process of alignment.
 
 
@@ -48,6 +48,11 @@ python run-paris.py --dataset fr_en --train_ratio 0.01
 ```bash
 python explain.py
 ```
+
+- instances of the mined supporting rules for the inferred pairs:
+
+![](mined-rules.png)
+
 
 # 🍀 Citation
 If you find this work helpful, please cite our paper:
