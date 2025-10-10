@@ -8,7 +8,7 @@
 
 NeuSymEA is an entity alignment framework driven by neuro-symbolic reasoning, offering an efficient and interpretable solution for large-scale knowledge fusion. This work has been accepted by [NeurIPS&#39;25](https://arxiv.org/abs/2410.04153).
 
-![System Architecture](framework.png)
+![System Architecture](figs/framework.png)
 
 ## 🌟 Key Features
 
@@ -49,7 +49,7 @@ python explain.py
 
 > Instances of the mined supporting rules for the inferred pairs:
 
-![](mined-rules.png)
+![](figs/mined-rules.png)
 
 # 🍀 Citation
 
