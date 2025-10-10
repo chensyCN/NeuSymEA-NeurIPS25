@@ -6,14 +6,19 @@
       <a href="https://arxiv.org/abs/2410.04153"><img src="https://img.shields.io/badge/paper-available-brightgreen"/></a>
 </div>
 
-NeuSymEA is an entity alignment framework driven by neuro-symbolic reasoning, offering an efficient and interpretable solution for large-scale knowledge fusion. This work has been accepted by [NeurIPS&#39;25](https://arxiv.org/abs/2410.04153).
+NeuSymEA is an entity alignment framework driven by neuro-symbolic reasoning, offering an efficient and interpretable solution for large-scale knowledge fusion. This work has been accepted by [NeurIPS'25](https://arxiv.org/abs/2410.04153).
 
 ![System Architecture](figs/framework.png)
 
 ## 🌟 Key Features
 
-- **❶ Robust entity alignment under low resource setting**: achieving 73.7% hit@1 accuracy on $DBP15K_{FR-EN}$ with only 1% pairs as seed alignments.
-- **❷  Explanation over knowledge graphs:** NeuSymEA's rule mining interpretable alignment results, enabling users to trace the reasoning process of alignment.
+- **❶ Low resource requirement:** achieving 73.7% hit@1 accuracy on $DBP15K_{FR-EN}$ with only 1% pairs as seed alignments.
+- **❷ Explanation over KGs:** NeuSymEA's rule mining interpretable alignment results, enabling users to trace the reasoning process of alignment.
+- **❸ Scalabile to large KGs:** NeuSymEA can handle large-scale KGs efficiently, consistently outperforming state-of-the-art methods.
+
+
+> Scalability analysis on large scale KGs. (Left) Hit@1 alignment performance on large KGs. (Right) Per-second processed entities of neural and symbolic components on different scales of KGs.
+![large-kgs](figs/large-kgs.png)
 
 ## 🚀 Quick Start
 
@@ -47,8 +52,7 @@ python run-paris.py --dataset fr_en --train_ratio 0.01
 python explain.py
 ```
 
-> Instances of the mined supporting rules for the inferred pairs:
-
+> Instances of the mined supporting rules for the inferred pairs in $DBP15K_{FR-EN}$, anchor pairs are shown in bold.
 ![](figs/mined-rules.png)
 
 # 🍀 Citation
