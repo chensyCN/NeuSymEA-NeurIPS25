@@ -3,10 +3,10 @@
 <div align="center">
     <a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-green.svg"/></a>
       <a href="http://makeapullrequest.com"><img src="https://img.shields.io/github/last-commit/chensyCN/NeuSymEA-NeurIPS25?color=blue"/></a>
-      <a href="https://arxiv.org/abs/2410.04153"><img src="https://img.shields.io/badge/paper-available-brightgreen"/></a>
+      <a href="https://neurips.cc/virtual/2025/poster/117956"><img src="https://img.shields.io/badge/paper-available-brightgreen"/></a>
 </div>
 
-NeuSymEA is an entity alignment framework driven by neuro-symbolic reasoning, offering an efficient and interpretable solution for large-scale knowledge fusion. This work has been accepted by [NeurIPS'25](https://arxiv.org/abs/2410.04153).
+NeuSymEA is an entity alignment framework driven by neuro-symbolic reasoning, offering an efficient and interpretable solution for large-scale knowledge fusion. This work has been accepted by [NeurIPS'25](https://neurips.cc/virtual/2025/poster/117956).
 
 ![System Architecture](figs/framework.png)
 
@@ -28,13 +28,13 @@ NeuSymEA is an entity alignment framework driven by neuro-symbolic reasoning, of
 pip install -r requirements.txt
 ```
 
-### 2. Run the baseline model (e.g. lightea)
+### 2. Run the baseline model (e.g. LightEA)
 
 ```bash
 python run-baseline.py --dataset fr_en --train_ratio 0.01 --ea_model lightea --gpu 1 
 ```
 
-### 3. Run neuSymEA with the lightea model as base ea model
+### 3. Run neuSymEA with the LightEA model as base EA model
 
 ```bash
 python run-neusymea.py --dataset fr_en --train_ratio 0.01 --base_ea_model lightea --gpu 1
